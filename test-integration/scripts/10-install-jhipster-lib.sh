@@ -16,9 +16,9 @@ if [[ "$JHI_REPO" == *"/jhipster" ]]; then
     test-integration/scripts/10-replace-version-jhipster.sh
 
     ./mvnw clean install -Dgpg.skip=true
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-framework/
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-dependencies/
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-parent/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-framework/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-dependencies/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-parent/
 
 elif [[ "$JHI_LIB_BRANCH" == "release" ]]; then
     echo "*** jhipster: use release version"
@@ -38,9 +38,9 @@ else
     test-integration/scripts/10-replace-version-jhipster.sh
 
     ./mvnw clean install -Dgpg.skip=true
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-framework/
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-dependencies/
-    ls -al ~/.m2/repository/io/github/jhipster/jhipster-parent/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-framework/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-dependencies/
+    ls -al ~/.m2/repository/tech/jhipster/jhipster-parent/
 fi
 
 #-------------------------------------------------------------------------------
